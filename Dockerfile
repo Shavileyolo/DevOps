@@ -8,5 +8,6 @@ RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello
 WORKDIR boxfuse-sample-java-war-hello
 RUN mvn package
 WORKDIR target
-EXPOSE 80
+RUN pwd
+RUN ls
 ADD hello-1.0.war /var/lib/tomcat9/webapps
