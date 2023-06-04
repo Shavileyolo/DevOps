@@ -11,3 +11,4 @@ WORKDIR target
 RUN pwd
 RUN ls
 COPY hello-1.0.war /var/lib/tomcat9/webapps/
+CMD ["daemon off;"]
